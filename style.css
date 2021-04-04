@@ -8,7 +8,7 @@
     margin: 6% auto;
     height: 700px;
     width: 1200px;
-    border: 1px solid #0b3555; 
+    border: 1px solid #0b3555;
     box-shadow: 5px 10px #165788
 }
 
@@ -47,7 +47,7 @@
 .lang-selection a button {
     border-radius: 25px;
     font-weight: 600;
-    background-color: #165788; 
+    background-color: #165788;
     border: none;
     color: rgb(255, 255, 255);
     padding: 15px 32px;
@@ -228,4 +228,26 @@
 .register-info-r1,.register-info-r2,.register-info-r3,.register-info-r4,
 .register-info-r5,.register-info-r6,.register-info-r7,.register-info-r8 {
     margin-bottom: 20px;
+}
+
+
+/*
+Contact us Formatting
+*/
+.container {
+  width: 100%;
+  height: 33%;
+  margin: auto;
+  padding: 10px;
+}
+
+.one {
+  width: 25%;
+  height: 25%;
+  float: left;
+}
+
+.two {
+  margin-left: 15%;
+  height: 25%;
 }
