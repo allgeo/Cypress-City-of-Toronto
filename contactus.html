@@ -26,25 +26,86 @@
        </div>
        <div class="two">
          <h2> Davis Jones </h2>
-          Email: BigD@toronto.ca <br>
-          Phone: (416) 897-1111 (ext. 5213)
+         Mayor <br>
+
+         <button onclick="myFunction()"> Contact </button>
+
+         <div id="myDIV" style="display:none">
+           <p> Email: DJones@toronto.ca <br>
+               Phone: (416) 897-1111 (ext. 5213) <br>
+               Hours: 8:00-17:00 est
+               </p>
+         </div>
+
        </div>
+
        <div class="one" >
             <img src="./images/RandomPerson2.jpg" width ="65%" height="100%" style="vertical-align:middle; margin:0px 50px">
        </div>
        <div class="two">
          <h2> Shequia Winfrey </h2>
-         Email: ShequiaWinfrey@toronto.ca <br>
-         Phone: (416) 897-1111 (ext. 2313)
+         City Representitive <br>
+
+
+        <button onclick="myFunction2()"> Contact </button>
+
+        <div id="myDIV2" style="display:none">
+          <p> Email: ShequiaWinfrey@toronto.ca <br>
+              Phone: (416) 897-1111 (ext. 2313) <br>
+              Hours: 10:00-19:00 est
+            </p>
+        </div>
        </div>
+
        <div class= "one">
             <img src="./images/RandomPerson3.jpg" width ="65%" height="100%" style="vertical-align:middle; margin:0px 50px">
        </div>
        <div class="two">
           <h2>  Marie Francisco </h2>
-          Email: MFrancisco@toronto.ca <br>
-          Phone: (416) 897-1111 (ext. 5278)
+          Head Administrator <br>
+
+          <button onclick="myFunction3()"> Contact </button>
+
+          <div id="myDIV3" style="display:none">
+            <p> Email: MFrancisco@toronto.ca <br>
+                Phone: (416) 897-1111 (ext. 5278) <br>
+                Hours: 6:00-15:00 est
+              </p>
+          </div>
+
        </div>
     </div>
+
+<script>
+
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function myFunction2() {
+    var x2 = document.getElementById("myDIV2");
+    if (x2.style.display === "none") {
+      x2.style.display = "block";
+    } else {
+      x2.style.display = "none";
+    }
+  }
+
+  function myFunction3() {
+    var x3 = document.getElementById("myDIV3");
+    if (x3.style.display === "none") {
+      x3.style.display = "block";
+    } else {
+      x3.style.display = "none";
+    }
+  }
+</script>
+
+
 </body>
 </html>
