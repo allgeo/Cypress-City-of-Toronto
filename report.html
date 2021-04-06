@@ -23,8 +23,8 @@
         </nav>
         <div class="register-content">
             <div class="register-address">
-                <label for="address">Address: </label> 
-                <input type="text" id="address" name="address">    
+                <label for="address">Address: </label>
+                <input type="text" id="address" name="address">
             </div>
 
             <div class="register-info">
@@ -35,7 +35,7 @@
                     <div class="register-info-block-1">
                         <div class="register-info-r1">
                             <input type="radio" id="utilityFailures" name="" value="">
-                            <label for="utilityFailures">Utility Failures</label><br> 
+                            <label for="utilityFailures">Utility Failures</label><br>
                         </div>
 
                         <div class="register-info-r2">
@@ -47,32 +47,41 @@
                             <input type="radio" id="cityPropertyVandalism" name="" value="">
                             <label for="cityPropertyVandalism">City Property Vandalism</label><br>
                         </div>
-    
+
                         <div class="register-info-r4">
                             <input type="radio" id="erodedStreets" name="" value="">
                             <label for="erodedStreets">Eroded Streets</label><br>
                         </div>
                     </div>
 
-                    <div class="register-info-block-2">                       
+                    <div class="register-info-block-2">
                         <div class="register-info-r5">
                             <input type="radio" id="treeCollapse" name="" value="">
                             <label for="treeCollapse">Tree Collapse</label><br>
                         </div>
-    
+
                         <div class="register-info-r6">
                             <input type="radio" id="floodedStreets" name="" value="">
                             <label for="floodedStreets">Flooded Streets</label><br>
                         </div>
-                           
+
                         <div class="register-info-r7">
                             <input type="radio" id="mouldAndSporeGrowth" name="" value="">
                             <label for="mouldAndSporeGrowth">Mould and Spore Growth</label><br>
                         </div>
-                          
+
                         <div class="register-info-r8">
                             <input type="radio" id="garbageOrRoadBloking" name="" value="">
                             <label for="garbageOrRoadBloking">Garbage or any other Road Bloking objects</label>
+                        </div>
+
+
+                        <!-- Example of Possible Submit button -->
+
+                        <div >
+                          <br><br>
+                          <button type="submit" id="myButton">Submit</button>
+
                         </div>
                     </div>
                </form>
@@ -80,5 +89,14 @@
 
         </div>
     </div>
+
+<!-- for the button to notify user that it was successful and to ask for survey -->
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "www.youtube.com";
+    };
+</script>
+
+
 </body>
 </html>
