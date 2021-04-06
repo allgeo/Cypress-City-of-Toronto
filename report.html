@@ -81,12 +81,22 @@
             <div>
             <!-- Submittion of the report directing to survey page -->
             <br><br>
-            <a href="survey.html">
-                <button style="margin-left: 15%;" type="submit">Submit</button>
+            <button style="margin-left: 15%;" type="submit" onclick="myFunction()">Submit</button>
             </a>
           </div>
         </div>
     </div>
+    <script>
+    function myFunction() {
+      var txt;
+      if (confirm("Your Complaint has been Resolved!\nWould you like to take our survey?")) {
+        window.location.href = "survey.html";
+      } else {
+        window.location.href = "Index.html";
+      }
+      document.getElementById("demo").innerHTML = txt;
+      }
 
+    </script>
 </body>
 </html>
