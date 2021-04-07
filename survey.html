@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
-    <title>Suggest</title>
+    <title>Survey</title>
 </head>
 <body>
     <div class="inner">
@@ -21,9 +21,120 @@
             </a>
             <hr>
         </nav>
-        <div>
-          <h2 style="margin-left:5%"> Your Report has been Submitted <br> Updates will be provided. </h2>
+        <div style="margin-left:5%;">
+          <form>
+
+          <h2> Survey </h2>
+          <hr>
+
+          <h3>The following series of questions ask about your feelings
+          toward your work. Select the answer that is true most of the time.
+          </h3>
+
+          <p>
+
+          <table border="">
+
+          <tbody"><tr align="CENTER">
+          <td width="75"> </td>
+          <td width="75"><b>Strongly<br>agree</b></td>
+          <td width="75"><b>Agree</b></td>
+          <td width="75"><b>Neither<br>agree<br>nor<br>disagree</b></td>
+          <td width="75"><b>Disagree</b></td>
+          <td width="75"><b>Strongly<br>disagree</b></td>
+          </tr>
+
+          <tr align="CENTER">
+          <td align="LEFT">
+            You feel safe downtown.</td>
+          <td><input type="RADIO" name="safety" value="1"></td>
+          <td><input type="RADIO" name="safety" value="2"></td>
+          <td><input type="RADIO" name="safety" value="3"></td>
+          <td><input type="RADIO" name="safety" value="4"></td>
+          <td><input type="RADIO" name="safety" value="5"></td>
+          </tr>
+
+          <tr align="CENTER">
+          <td align="LEFT">
+            The diversity in our city is striving.</td>
+          <td><input type="RADIO" name="diversity" value="1"></td>
+          <td><input type="RADIO" name="diversity" value="2"></td>
+          <td><input type="RADIO" name="diversity" value="3"></td>
+          <td><input type="RADIO" name="diversity" value="4"></td>
+          <td><input type="RADIO" name="diversity" value="5"></td>
+          </tr>
+
+          <tr align="CENTER">
+          <td align="LEFT">
+             The prices to buy a home in the city core is reasonable. </td>
+          <td><input type="RADIO" name="shopping" value="1"></td>
+          <td><input type="RADIO" name="shopping" value="2"></td>
+          <td><input type="RADIO" name="shopping" value="3"></td>
+          <td><input type="RADIO" name="shopping" value="4"></td>
+          <td><input type="RADIO" name="shopping" value="5"></td>
+          </tr>
+
+          <tr align="CENTER">
+          <td align="LEFT">
+          The transportation is reliable.</td>
+          <td><input type="RADIO" name="transport" value="1"></td>
+          <td><input type="RADIO" name="transport" value="2"></td>
+          <td><input type="RADIO" name="transport" value="3"></td>
+          <td><input type="RADIO" name="transport" value="4"></td>
+          <td><input type="RADIO" name="transport" value="5"></td>
+          </tr>
+
+          <tr align="CENTER">
+          <td align="LEFT">
+          Wide variety of retail and products are accessible. </td>
+          <td><input type="RADIO" name="retail" value="1"></td>
+          <td><input type="RADIO" name="retail" value="2"></td>
+          <td><input type="RADIO" name="retail" value="3"></td>
+          <td><input type="RADIO" name="retail" value="4"></td>
+          <td><input type="RADIO" name="retail" value="5"></td>
+          </tr>
+
+          </tbody></table>
+
+          </p><hr>
+          <p></p><p>
+          Additional comments and/or feedback:
+          <textarea style="background-color: white; color: black;" name="comment" rows="2" cols="50"></textarea>
+
+
+          <p></p><p>
+          Thank you for taking part in the survey.  To submit the results, press the
+          <b>Send info</b> button below.
+          </p>
+
+          <input style="border-radius: 20px;
+          border: 1px solid #165788;
+          color: #000000;
+          width: 250px;
+          height: 30px;
+          padding-left: 10px;
+          margin-bottom: 3px;" type="reset" value="Clear values">
+
+          </form>
         </div>
+
+        <button style="margin-left:5%" type="submit" onclick="myFunction()"> Send Info </button>
+
     </div>
+
+  <script>
+  function myFunction() {
+    var txt;
+    if (confirm("Your Survey has been submitted")) {
+      window.location.href = "index.html";
+    } else {
+      window.location.href = "index.html";
+    }
+    document.getElementById("demo").innerHTML = txt;
+    }
+
+  </script>
+
+
 </body>
 </html>
