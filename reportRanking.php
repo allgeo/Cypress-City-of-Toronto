@@ -38,7 +38,7 @@ if ($conn->connect_error) {
 
         <div class="register-content">
           <a href="reportsHome.html" style="float: left; margin: 4%">BACK</a>
-          <a href="index.html" style="float: right; margin: 4%">LOGOUT</a>
+          <a href="logout.php" style="float: right; margin: 4%">LOGOUT</a>
           <br> <br> <br>
 
           <h1>Reports Ranked from Highest Imporance to Lowest</h1>
