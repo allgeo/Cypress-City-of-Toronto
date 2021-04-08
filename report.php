@@ -103,9 +103,6 @@
         <a href="#" style="float: right; margin: 4%">FAQ</a>
     </div>
 
-
-
-
       <script type="text/javascript">
       var inputs = document.getElementsByName('problem[]');
       function checkboxes() {
@@ -123,9 +120,16 @@
         });
         if (isAtLeastOneCheckboxSelected == false) {
           alert("You must select an issue ");
+        } else {
+          survey();
         }
         return isAtLeastOneCheckboxSelected;
+      }
 
+      function survey() {
+        if (confirm("Your Complaint has been Submitted!\n\nWould you like to take our survey?")) {
+          window.open("survey.html");
+        } 
       }
       </script>
   </body>
