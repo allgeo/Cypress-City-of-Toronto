@@ -59,12 +59,18 @@
                 <form action="" method="post">
                     <div class="profile-submit">
                         <input style="border-radius: 20px; border: 1px solid #165788; width:250px; height: 30px; padding-left: 10px; color: black; font-size: 18px; margin-bottom: 8px; text-align: center;" type="text" name="user_name" value="<?php echo $user_data['user_name'];?>"> <br>
-                        <input style="border: none; background-color: red; color:#fff; font-size: 18px;" type="submit" name="delete" value="Delete Profile"> 
+                        <input style="border: none; background-color: red; color:#fff; font-size: 18px;" type="submit" name="delete" value="Delete Profile" onclick="sessionClear()"> 
                     </div>
                  
                 </form>
             </div>
         </div>
     </div>
+    
+    <script type="text/javascript">
+        function sessionClear() {
+            window.localStorage.clear();    
+        }
+    </script>
 </body>
 </html>
