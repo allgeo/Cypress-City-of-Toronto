@@ -38,7 +38,7 @@ if ($conn->connect_error) {
 
         <div class="register-content">
           <a href="reportsHomeFr.html" style="float: left; margin: 4%">Retournez</a>
-          <a href="indexFr.html" style="float: right; margin: 4%">Se Déconnecter</a>
+          <a href="logoutFr.php" style="float: right; margin: 4%">Se Déconnecter</a>
           <br> <br> <br>
 
           <h1>Rapports classés de la plus haute importance à la plus faible</h1>
