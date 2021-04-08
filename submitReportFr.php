@@ -24,7 +24,7 @@ $issueRank = [
 ];
 
 if ($_POST['button'] == 'Cancel') {
-    header("Location: reportsHome.html");
+    header("Location: reportsHomeFr.html");
 } elseif ($_POST['button'] == 'Report') {
     $address = ucwords($_POST['address']);
     $problem = $_POST['problem'];
@@ -54,7 +54,7 @@ if ($_POST['button'] == 'Cancel') {
     VALUES ('$uname', '$address', '$probs', '$descFix', '$rank')";
 
     if ($conn->query($reg) === TRUE) {
-      header("Location: myReports.php");
+      header("Location: myReportsFr.php");
     } else {
       echo "error";
     }
@@ -79,14 +79,14 @@ if ($_POST['button'] == 'Cancel') {
     $reg = "UPDATE `reports` SET `address`='$address', `issue`='$probs', `description`='$descFix',
     `rank`='$rank' WHERE `id`='$id'";
     if ($conn->query($reg) === TRUE) {
-      header("Location: myReports.php");
+      header("Location: myReportsFr.php");
     } else {
       echo "error";
-      header("Location: reportsHome.html");
+      header("Location: reportsHomeFr.html");
     }
 
 } else {
-  header("Location: reportsHome.html");
+  header("Location: reportsHomeFr.html");
 }
 
 
