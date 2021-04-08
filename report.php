@@ -24,7 +24,7 @@
 
         <div class="register-content">
           <br>
-          <a href="index.html" style="float: right; margin-right: 4%">LOGOUT</a>
+          <a href="logout.php" style="float: right; margin-right: 4%">LOGOUT</a>
 
           <form class="report" id="report" name="report" action="submitReport.php" method="post">
 
