@@ -24,7 +24,7 @@ $command = "SELECT * FROM `reports`";
 
    $reg = "UPDATE `reports` SET `totalR`='$rank' WHERE `id`='$id'";
    if ($conn->query($reg) === TRUE) {
-     header("Location: reportRanking.php");
+     header("Location: reportRankingFr.php");
    } else {
      header("Location: reportsHome.html");
    }
