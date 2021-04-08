@@ -111,7 +111,7 @@
       function checkboxes() {
         var add = document.forms["report"]["address"].value;
         if (add == "") {
-          alert("Please enter an address");
+          alert("Inscrivez une adresse SVP");
           return false;
         }
         var isAtLeastOneCheckboxSelected = false;
@@ -123,9 +123,16 @@
         });
         if (isAtLeastOneCheckboxSelected == false) {
           alert("Vous devez sélectionnez un problème ");
+        } else {
+          survey(); 
         }
         return isAtLeastOneCheckboxSelected;
-
+      }
+        
+      function survey() {
+         if (confirm("Votre rapport a soumis!\n\nEst-ce que vous voulez completer notre enquête?")) {
+          window.open("survey.html");
+        } 
       }
       </script>
   </body>
