@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    <title>Contactez</title>
+</head>
+<body>
+    <div class="inner">
+        <nav class="nav">
+            <a href="/" class="cypress-logo">
+                <img src="./images/cypress-logo.png" alt="">
+            </a>
+            <a href="/" class="toronto-logo">
+                <img src="./images/toronto-logo.png" alt="">
+            </a>
+            <hr>
+        </nav>
+        <div class="one">
+            <img src="./images/RandomPerson1.jpg" width ="65%" height="100%" style="vertical-align:middle; margin:0px 50px">
+       </div>
+       <div class="two">
+         <h2> Davis Jones </h2>
+         Maire <br>
+
+         <button onclick="myFunction()"> Contactez </button>
+
+         <div id="myDIV" style="display:none">
+           <p> E-mail: DJones@toronto.ca <br>
+            Numéro de Téléphone: (416) 897-1111 (ext. 5213) <br>
+               Les Heures: 8:00 à 17:00 est
+               </p>
+         </div>
+
+       </div>
+
+       <div class="one" >
+            <img src="./images/RandomPerson2.jpg" width ="65%" height="100%" style="vertical-align:middle; margin:0px 50px">
+       </div>
+       <div class="two">
+         <h2> Shequia Winfrey </h2>
+         Représentant de la Ville <br>
+
+
+        <button onclick="myFunction2()"> Contactez </button>
+
+        <div id="myDIV2" style="display:none">
+          <p> E-mail: ShequiaWinfrey@toronto.ca <br>
+            Numéro de Téléphone: (416) 897-1111 (ext. 2313) <br>
+              Les Heures: 10:00 à 19:00 est
+            </p>
+        </div>
+       </div>
+
+       <div class= "one">
+            <img src="./images/RandomPerson3.jpg" width ="65%" height="100%" style="vertical-align:middle; margin:0px 50px">
+       </div>
+       <div class="two">
+          <h2>  Marie Francisco </h2>
+          Administrateur en Chef <br>
+
+          <button onclick="myFunction3()"> Contactez </button>
+
+          <div id="myDIV3" style="display:none">
+            <p> E-mail: MFrancisco@toronto.ca <br>
+                Numéro de Téléphone: (416) 897-1111 (ext. 5278) <br>
+                Les Heures: 6:00 à 15:00 est
+              </p>
+          </div>
+
+       </div>
+    </div>
+
+<script>
+
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function myFunction2() {
+    var x2 = document.getElementById("myDIV2");
+    if (x2.style.display === "none") {
+      x2.style.display = "block";
+    } else {
+      x2.style.display = "none";
+    }
+  }
+
+  function myFunction3() {
+    var x3 = document.getElementById("myDIV3");
+    if (x3.style.display === "none") {
+      x3.style.display = "block";
+    } else {
+      x3.style.display = "none";
+    }
+  }
+</script>
+
+
+</body>
+</html>

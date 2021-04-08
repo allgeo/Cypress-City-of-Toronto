@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    <title>Sondage</title>
+</head>
+<body>
+    <div class="inner">
+        <nav class="nav">
+            <a href="portal.html" class="cypress-logo">
+                <img src="./images/cypress-logo.png" alt="">
+            </a>
+            <a href="portal.html" class="toronto-logo">
+                <img src="./images/toronto-logo.png" alt="">
+            </a>
+            <hr>
+        </nav>
+        <div style="margin-left:5%;">
+          <form>
+
+          <h2> Sondage </h2>
+          <hr>
+
+          <h3>La série de questions suivante pose des questions sur vos sentiments
+            vers votre travail. Sélectionnez la réponse qui est vraie la plupart du temps.
+          </h3>
+
+          <p>
+
+          <table border="">
+
+          <tbody><tr align="CENTER">
+          <td width="75"> </td>
+          <td width="75"><b>Tout à fait<br>d'accord</b></td>
+          <td width="75"><b>Accepte</b></td>
+          <td width="75"><b>Ni<br>d'accord<br>ni en désaccord<br>désaccord</b></td>
+          <td width="75"><b>Être en Désaccord</b></td>
+          <td width="75"><b>Pas du tout<br>d'accord</b></td>
+          </tr>
+
+          <tr align="CENTER">
+          <td align="LEFT">
+            Vous vous sentez en sécurité au centre-ville.</td>
+          <td><input type="RADIO" name="safety" value="1"></td>
+          <td><input type="RADIO" name="safety" value="2"></td>
+          <td><input type="RADIO" name="safety" value="3"></td>
+          <td><input type="RADIO" name="safety" value="4"></td>
+          <td><input type="RADIO" name="safety" value="5"></td>
+          </tr>
+
+          <tr align="CENTER">
+          <td align="LEFT">
+            La diversité dans notre ville s'efforce.</td>
+          <td><input type="RADIO" name="diversity" value="1"></td>
+          <td><input type="RADIO" name="diversity" value="2"></td>
+          <td><input type="RADIO" name="diversity" value="3"></td>
+          <td><input type="RADIO" name="diversity" value="4"></td>
+          <td><input type="RADIO" name="diversity" value="5"></td>
+          </tr>
+
+          <tr align="CENTER">
+          <td align="LEFT">
+            Les prix pour acheter une maison dans le centre-ville sont raisonnables. </td>
+          <td><input type="RADIO" name="shopping" value="1"></td>
+          <td><input type="RADIO" name="shopping" value="2"></td>
+          <td><input type="RADIO" name="shopping" value="3"></td>
+          <td><input type="RADIO" name="shopping" value="4"></td>
+          <td><input type="RADIO" name="shopping" value="5"></td>
+          </tr>
+
+          <tr align="CENTER">
+          <td align="LEFT">
+          Le transport est fiable.</td>
+          <td><input type="RADIO" name="transport" value="1"></td>
+          <td><input type="RADIO" name="transport" value="2"></td>
+          <td><input type="RADIO" name="transport" value="3"></td>
+          <td><input type="RADIO" name="transport" value="4"></td>
+          <td><input type="RADIO" name="transport" value="5"></td>
+          </tr>
+
+          <tr align="CENTER">
+          <td align="LEFT">
+          Une grande variété de magasins et de produits sont accessibles. </td>
+          <td><input type="RADIO" name="retail" value="1"></td>
+          <td><input type="RADIO" name="retail" value="2"></td>
+          <td><input type="RADIO" name="retail" value="3"></td>
+          <td><input type="RADIO" name="retail" value="4"></td>
+          <td><input type="RADIO" name="retail" value="5"></td>
+          </tr>
+
+          </tbody></table>
+
+          </p><hr>
+          <p></p><p>
+          Commentaires et / ou commentaires supplémentaires:
+          <textarea style="background-color: white; color: black;" name="comment" rows="2" cols="50"></textarea>
+
+
+          <p></p><p>
+          Merci d'avoir participé à l'enquête. Pour soumettre les résultats, appuyez sur la touche<b>Envoyer le bouton d'information</b>ci-dessous.
+          </p>
+
+          <input style="border-radius: 20px;
+          border: 1px solid #165788;
+          color: #000000;
+          width: 250px;
+          height: 30px;
+          padding-left: 10px;
+          margin-bottom: 3px;" type="reset" value="Clear values">
+
+          </form>
+        </div>
+
+        <button style="margin-left:5%" type="submit" onclick="myFunction()"> Envoye des Informations </button>
+
+    </div>
+
+  <script>
+  function myFunction() {
+    var txt;
+    if (confirm("Votre enquête a été soumise")) {
+      window.location.href = "portalFr.html";
+    } else {
+      window.location.href = "surveyFr.html";
+    }
+    document.getElementById("demo").innerHTML = txt;
+    }
+
+  </script>
+
+
+</body>
+</html>
