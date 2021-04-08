@@ -325,3 +325,87 @@ Contact us Formatting
     margin-left: 15%;
     height: 25%;
   }
+
+/*--------------------------------------------------Voting Page--------------------------------------------------*/
+
+.register-content input[type=text]{
+    border-radius: 20px;
+    border: 1px solid #165788;
+    color: #000000;
+    width: 680px;
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 3px;
+}
+
+.register-email {
+    margin-left: 170px;
+    font-size: 22px;
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+
+.register-vote {
+    margin-top: 90px;
+    margin-left: 160px;
+}
+
+.register-vote p{
+    margin-bottom: 9px;
+    font-size: 18px;
+}
+
+.register-vote hr{
+    border: 1px solid #165788;
+    width: 80%;
+    margin-left: 0px;
+}
+
+.register-vote form {
+    margin-left: 60px;
+}
+
+.register-vote label{
+    font-size: 18px;
+}
+
+.register-vote-block-1, .register-vote-block-2 {
+    float: left;
+    margin-top: 10px;
+    margin-left: 29px;
+}
+
+.register-vote-block-2 {
+    margin-left: 369px;
+}
+
+.register-vote-r1,.register-vote-r2,.register-vote-r3,.register-vote-r4,
+.register-vote-r5,.register-vote-r6,.register-vote-r7,.register-vote-r8 {
+    margin-bottom: 20px;
+}
+
+.vote-submit input[type=submit], textarea {
+    background-color: #165788;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.vote-submit input{
+    
+    margin-left: 95px;
+}
+
+/*--------------------------------------------------Feedback Page--------------------------------------------------*/
+
+.thanks-content p{
+    margin-left: 60px;
+    font-size: 22px;
+}
+
+.thanks-info{
+    margin-left: 110px;
+    margin-top: 40px;
+}
+.thanks-info a{
+    text-decoration: none;
+}
