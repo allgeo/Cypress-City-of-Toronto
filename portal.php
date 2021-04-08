@@ -45,10 +45,10 @@
         <div class="portal-content">
             <p>QUICK LINKS >></p>
             <div class="portal-info">
-                <a href="report.html">
+                <a href="reportsHome.html">
                     <button>Report a Problem</button>
                 </a> <br>
-                <a href="suggest.html">
+                <a href="suggest.php">
                     <button>Suggest</button>
                 </a> <br>
                 <a href="vote.html">
