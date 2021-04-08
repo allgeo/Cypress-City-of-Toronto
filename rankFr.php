@@ -26,7 +26,7 @@ $command = "SELECT * FROM `reports`";
    if ($conn->query($reg) === TRUE) {
      header("Location: reportRankingFr.php");
    } else {
-     header("Location: reportsHome.html");
+     header("Location: reportsHomeFr.html");
    }
 
 }
