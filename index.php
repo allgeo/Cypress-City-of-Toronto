@@ -21,7 +21,7 @@
             <p>Select a Language / Sélectionnez une langue</p>
             <div class="link-btn">
                 <a href="login.php"><button>English</button></a>
-                <a href="login.php"><button>Français</button></a>
+                <a href="loginFr.php"><button>Français</button></a>
             </div>
         </div>
     </div>
