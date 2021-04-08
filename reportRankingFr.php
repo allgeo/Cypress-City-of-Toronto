@@ -67,7 +67,7 @@ if ($conn->connect_error) {
 
           <?php } ?>
         </div>
-        <a href="#" style="float: right; margin: 4%">QPF</a>
+        <a href="faqFr.html" style="float: right; margin: 4%">QPF</a>
     </div>
 
 

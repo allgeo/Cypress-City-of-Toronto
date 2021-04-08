@@ -100,7 +100,7 @@
           </form>
 
         </div>
-        <a href="#" style="float: right; margin: 4%">QFP</a>
+        <a href="faqFr.html" style="float: right; margin: 4%">QFP</a>
     </div>
 
 

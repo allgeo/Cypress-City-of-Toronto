@@ -85,7 +85,7 @@ if ($conn->connect_error) {
             }
           }
         </script>
-        <a href="#" style="float: right; margin: 4%">FAQ</a>
+        <a href="faq.html" style="float: right; margin: 4%">FAQ</a>
     </div>
 
 

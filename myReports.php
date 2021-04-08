@@ -70,7 +70,7 @@ if ($conn->connect_error) {
 
           <?php } ?>
         </div>
-        <a href="#" style="float: right; margin: 4%">FAQ</a>
+        <a href="faq.html" style="float: right; margin: 4%">FAQ</a>
     </div>
 
 
