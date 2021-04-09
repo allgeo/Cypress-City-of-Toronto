@@ -23,10 +23,10 @@
 <body>
     <div class="inner">
         <nav class="nav">
-            <a href="portal.php" class="cypress-logo">
+            <a href="portalFr.php" class="cypress-logo">
                 <img src="./images/cypress-logo.png" alt="">
             </a>
-            <a href="portal.php" class="toronto-logo">
+            <a href="portalFr.php" class="toronto-logo">
                 <img src="./images/toronto-logo.png" alt="">
             </a>
             <hr>
