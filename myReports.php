@@ -23,7 +23,39 @@ if ($conn->connect_error) {
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet" />
     <title>My Reports</title>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        }
+        #map {
+        position: relative;
+        margin-left: 60px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+        width: 75%;
+        height: 300px;
+        }
+        .marker {
+        background-image: url('mapbox-icon.png');
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        }
+        .mapboxgl-popup {
+        max-width: 200px;
+        }
+        .mapboxgl-popup-content {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        }
+    </style>
   </head>
   <body>
     <div class="inner-reg">
@@ -39,8 +71,46 @@ if ($conn->connect_error) {
 
         <div class="register-content">
           <a href="reportsHome.html" style="float: left; margin: 4%">BACK</a>
-          <a href="logout.php" style="float: right; margin: 4%">LOGOUT</a>
-          <br> <br>
+          <a href="index.html" style="float: right; margin: 4%">LOGOUT</a>
+          <br> 
+          <div class="inner-reg-2">
+                <h2 style="margin-left: 1%"> Most report occurances: Downtown Toronto </h2>  
+                <div id="map">cszczcxz</div>
+                <script>
+                  mapboxgl.accessToken = 'pk.eyJ1IjoidHVyamEyMCIsImEiOiJja240cm9jMnIwMGdhMnZsOG5ta3JyN29kIn0.eHftLsKhf3GNOAoZY-4SbQ';
+                  
+                
+                  
+                  var map = new mapboxgl.Map({
+                  container: 'map',
+                  style: 'mapbox://styles/turja20/ckn4t27pa21iq17mv2o520vfc',
+                  center: [-79.3575411167036,43.65649083874243],
+                  zoom: 11
+                  });
+                  
+                  // add markers to map
+                  geojson.features.forEach(function (marker) {
+                  // create a HTML element for each feature
+                  var el = document.createElement('div');
+                  el.className = 'marker';
+                  
+                  // make a marker for each feature and add it to the map
+                  new mapboxgl.Marker(el)
+                  .setLngLat(marker.geometry.coordinates)
+                  .setPopup(
+                  new mapboxgl.Popup({ offset: 25 }) // add popups
+                  .setHTML(
+                  '<h3>' +
+                  marker.properties.title +
+                  '</h3><p>' +
+                  marker.properties.description +
+                  '</p>'
+                  )
+                  )
+                  .addTo(map);
+                  });
+                </script>
+                </div>
           <?php
           $command = "";
           if (isset($_SESSION['user_id'])) {
@@ -69,8 +139,9 @@ if ($conn->connect_error) {
               </div>
 
           <?php } ?>
+          
         </div>
-        <a href="faq.html" style="float: right; margin: 4%">FAQ</a>
+        <a href="#" style="float: right; margin: 4%">FAQ</a>
     </div>
 
 
