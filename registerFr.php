@@ -18,7 +18,7 @@
 
             mysqli_query($con,$query);
 
-            header("Location: login.php");
+            header("Location: loginFr.php");
             die;
         } 
         else {
@@ -86,7 +86,7 @@
                         <br>
                         <button style="margin-left: 94px; background-color: #165788; font-size: 18px; border-radius: 20px; 
                         border: 1px solid #165788; width: 250px; height: 30px;">
-                            <a style="text-decoration:none; color: white;" href="login.php">Connectez-vous Ici!</a> 
+                            <a style="text-decoration:none; color: white;" href="loginFr.php">Connectez-vous Ici!</a> 
                         </button>
                     </div>
                 </form>
