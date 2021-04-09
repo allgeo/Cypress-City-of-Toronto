@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <title>Customer Service</title>
+</head>
+<body>
+
+        <div class="chat-popup">
+            <div class="chat-area">
+             <div class="income-msg">
+                 <span class="msg"> Hi, How can I help you?</span>
+             </div>   
+            </div>
+
+            <div class="input-area">
+                <input type="text" onkeydown="if(event.keyCode == 13){talk()}">
+                <button class="submit" > <i class="material-icons"> send</i></button>
+            </div>
+            <!-- <div style="text-align: center;" class="input-area">
+                <input id="userBox" type="text" onkeydown="if(event.keyCode == 13){talk()}">
+                <button class="submit"> send</i></button>
+            </div> -->
+        </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
