@@ -14,7 +14,7 @@
         
         mysqli_query($con,$query);
 
-        header("Emplacement: loginFr.php");
+        header("Location: loginFr.php");
         die;
     } 
 ?>
@@ -43,7 +43,7 @@
             <hr>
             <div>
                 <div style="float: right;">
-                    <a href="logout.php" style="text-decoration:none; text-align: right; color: red; margin-right: 60px; "> Se Déconnectez</a>
+                    <a href="logoutFr.php" style="text-decoration:none; text-align: right; color: red; margin-right: 60px; "> Se Déconnectez</a>
                 </div>
                 <div style="float: left; margin-left: 60px; margin-top:50px; ">
                     <h1 style="color: #165788; font-style: italic;">Êtes-vous sûr de vouloir supprimez votre profil?</h1>            
