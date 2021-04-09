@@ -28,10 +28,10 @@ $id = $_POST['delButton'];
         <div class="register-content" style="text-align: center">
           <br>
           <p>Voulez-vous vraiment supprimer votre rapport?</p>
-          <form class="" action="deleteReport.php" method="post" style="margin: 2%">
+          <form class="" action="deleteReportFr.php" method="post" style="margin: 2%">
             <button type="submit" name="delete" id="delete" value=<?php echo "$id"; ?>>Oui</button>
           </form>
-          <form class="" action="myReports.php" method="post" style="margin: 2%">
+          <form class="" action="myReportsFr.php" method="post" style="margin: 2%">
             <button type="submit" name="back" id="back">Non</button>
           </form>
         </div>
