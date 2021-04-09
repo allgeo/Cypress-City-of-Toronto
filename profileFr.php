@@ -65,6 +65,11 @@
                 </form>
             </div>
         </div>
+        <script type="text/javascript">
+        function sessionClear() {
+            window.localStorage.clear();    
+        }
+        </script>
     </div>
 </body>
 </html>
