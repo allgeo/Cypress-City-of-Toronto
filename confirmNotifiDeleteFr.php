@@ -127,7 +127,7 @@ $id = $_POST['delButton'];
           }
 
           ?>
-          <form action="/mail_form.php" method="post" id="contact-form" style="margin-top:90px;">
+          <form action="/mail_formFr.php" method="post" id="contact-form" style="margin-top:90px;">
               <h2>Envoyez un email de notifcation et effacez le rapport</h2>
 
             <div class="row">
