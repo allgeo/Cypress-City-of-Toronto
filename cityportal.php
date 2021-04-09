@@ -38,7 +38,7 @@ if ($conn->connect_error) {
 
         <div class="register-content">
           <a href="reportsHome.html" style="float: left; margin: 4%">BACK</a>
-          <a href="index.html" style="float: right; margin: 4%">LOGOUT</a>
+          <a href="portal.php" style="float: right; margin: 4%">LOGOUT</a>
           <br> <br>
           <?php
               $command = "SELECT * FROM `reports` ORDER BY `reports`.`date` DESC";
@@ -58,16 +58,12 @@ if ($conn->connect_error) {
 
                 <small style="margin-left: 1%"><?php echo "$report[2]"; ?></small><br>
                 <i style="margin-left: 1%"><?php echo "$report[3]"; ?></i> <br>
-                <?php $linkAddress = str_replace(" ", "+", $report[3]);
-                $link = "https://www.google.ca/maps/place/" . $linkAddress;?>
-                <a style="margin-left: 1%" href=<?php echo "$link"; ?> target="_blank">
-                Click to See on Google Maps</a>
                 <p style="margin-left: 1%"><?php echo "$report[5]"; ?></p>
               </div>
 
           <?php } ?>
         </div>
-        <a href="#" style="float: right; margin: 4%">FAQ</a>
+        <a href="faq.html" style="float: right; margin: 4%">FAQ</a>
     </div>
 
 
