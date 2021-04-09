@@ -38,7 +38,7 @@ if ($conn->connect_error) {
         </nav>
 
         <div class="register-content">
-          <a href="portal.html" style="float: left; margin: 4%">BACK</a>
+          <a href="portal.php" style="float: left; margin: 4%">BACK</a>
           <a href="logout.php" style="float: right; margin: 4%">LOGOUT</a>
           <br> <br> <br>
 
