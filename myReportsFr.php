@@ -56,10 +56,10 @@ if ($conn->connect_error) {
               <div class="inner-reg-2">
                 <h2 style="margin-left: 1%"><?php echo "$report[4]"; ?></h2>
 
-                <form class="" action="confirmDelete.php" method="post" style="float: right; margin: 2%">
+                <form class="" action="confirmDeleteFr.php" method="post" style="float: right; margin: 2%">
                   <button type="submit" name="delButton" id="delButton" value=<?php echo "$report[0]"; ?>>Effacez</button>
                 </form>
-                <form class="" action="report.php" method="post" style="float: right; margin: 2%">
+                <form class="" action="reportFr.php" method="post" style="float: right; margin: 2%">
                   <button type="submit" name="editButton" id="editButton" value=<?php echo "$report[0]"; ?>>Éditez</button>
                 </form>
 
