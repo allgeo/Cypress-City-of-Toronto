@@ -131,7 +131,7 @@
         
       function survey() {
          if (confirm("Votre rapport a soumis!\n\nEst-ce que vous voulez completer notre enquête?")) {
-          window.open("survey.html");
+          window.open("surveyFr.html");
         } 
       }
       </script>
