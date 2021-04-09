@@ -41,7 +41,8 @@ if ($conn->connect_error) {
           <a href="portalFr.php" style="float: left; margin: 4%">Retournez</a>
           <a href="logoutFr.php" style="float: right; margin: 4%">Se Déconnectez</a>
           <br> <br> <br>
-
+           
+          <a href="chatbotFr.html" target="_blank"><button>Envoyez les suggestions au ChatBot</button></a>  
           <?php
 
               $command = "SELECT * FROM `reports` ORDER BY `reports`.`date` DESC";
