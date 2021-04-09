@@ -78,7 +78,7 @@ $id = $_POST['delButton'];
         </nav>
         <div style="margin-bottom:60px;">
             <a href="reportsHome.html" style="float: left; margin: 4%">BACK</a>
-            <a href="index.html" style="float: right; margin: 4%">LOGOUT</a>
+            <a href="logout.php" style="float: right; margin: 4%">LOGOUT</a>
         </div>
         <div class="register-content" style="text-align: center">
             
