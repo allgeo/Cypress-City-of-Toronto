@@ -24,9 +24,9 @@
 
         <div class="register-content">
           <br>
-          <a href="logout.php" style="float: right; margin-right: 4%">Se Déconnectez</a>
+          <a href="logoutFr.php" style="float: right; margin-right: 4%">Se Déconnectez</a>
 
-          <form class="report" id="report" name="report" action="submitReport.php" method="post">
+          <form class="report" id="report" name="report" action="submitReportFr.php" method="post">
 
             <div class="register-address">
               Adresse: <input type="text" id="address" name="address" size="100">
