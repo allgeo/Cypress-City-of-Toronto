@@ -114,20 +114,12 @@ $id = $_POST['delButton'];
 
                   $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
                   $body = join(PHP_EOL, $bodyParagraphs);
-
-                  if (mail($toEmail, $emailSubject, $body, $headers)) {
-                      header('Location: thank-you.html');
-                  } else {
-                      $errorMessage = 'Oops, something went wrong. Please try again later';
-                  }
-              } else {
-                  $allErrors = join('<br/>', $errors);
-                  $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
-              }
+                   
+              } 
           }
 
           ?>
-          <form action="/mail_form.php" method="post" id="contact-form" style="margin-top:90px;">
+          <form action="" method="post" id="contact-form" style="margin-top:90px;">
               <h2>Send Notification Email and Complete/Delete report</h2>
 
             <div class="row">
