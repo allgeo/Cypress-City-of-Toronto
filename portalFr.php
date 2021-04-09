@@ -35,7 +35,7 @@
                     <h1 style="color: #165788; font-style: italic;" >Bonjour <?php echo $user_data['user_name'];?>! </h1>            
                 </div>
                 <div style="float: right;">
-                    <a href="logout.php" style="text-decoration:none; text-align: right; color: red; margin-right: 60px; "> Se Déconnectez</a>
+                    <a href="logoutFr.php" style="text-decoration:none; text-align: right; color: red; margin-right: 60px; "> Se Déconnectez</a>
                 </div>
             </div>
         </nav>
