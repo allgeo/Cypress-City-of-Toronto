@@ -21,7 +21,7 @@
 
                         $_SESSION['user_id'] = $user_data['user_id'];
 
-                        header("Location: portal.php");
+                        header("Location: portalFr.php");
                         die;
                     }
                 }
@@ -81,7 +81,7 @@
                         <br>
                         <button style="margin-left: 94px; background-color: #165788; font-size: 18px; border-radius: 20px; 
                         border: 1px solid #165788; width: 250px; height: 30px;">
-                            <a style="text-decoration:none; color: white;" href="register.php">Enregistrez Ici!</a> 
+                            <a style="text-decoration:none; color: white;" href="registerFr.php">Enregistrez Ici!</a> 
                         </button>
                     </div>
                 </form>
