@@ -11,7 +11,7 @@ $id = $_POST['delButton'];
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
-    <title>Notify and Delete</title>
+    <title>Notifier et effacer</title>
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
   <script>
       const constraints = {
@@ -77,8 +77,8 @@ $id = $_POST['delButton'];
             <hr>
         </nav>
         <div style="margin-bottom:60px;">
-            <a href="reportsHomeFr.html" style="float: left; margin: 4%">BACK</a>
-            <a href="logoutFr.php" style="float: right; margin: 4%">LOGOUT</a>
+            <a href="reportsHomeFr.html" style="float: left; margin: 4%">Retournez</a>
+            <a href="logoutFr.php" style="float: right; margin: 4%">Déconnectez</a>
         </div>
         <div class="register-content" style="text-align: center">
             
@@ -99,7 +99,7 @@ $id = $_POST['delButton'];
               if (empty($email)) {
                   $errors[] = 'Email est vide';
               } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                  $errors[] = 'Email n est pas valide';
+                  $errors[] = 'Email nest pas valide';
               }
 
               if (empty($message)) {
@@ -114,21 +114,13 @@ $id = $_POST['delButton'];
 
                   $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
                   $body = join(PHP_EOL, $bodyParagraphs);
-
-                  if (mail($toEmail, $emailSubject, $body, $headers)) {
-                      header('Location: thank-youFr.html');
-                  } else {
-                      $errorMessage = 'Oops, quelque choses n est pas fonctionner maintenant. Essayez un autre temp';
-                  }
-              } else {
-                  $allErrors = join('<br/>', $errors);
-                  $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
-              }
+                   
+              } 
           }
 
           ?>
-          <form action="/mail_formFr.php" method="post" id="contact-form" style="margin-top:90px;">
-              <h2>Envoyez un email de notifcation et effacez le rapport</h2>
+          <form action="" method="post" id="contact-form" style="margin-top:90px;">
+              <h2>Envoyez un email de notification et effacez le rapport</h2>
 
             <div class="row">
               <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
@@ -140,17 +132,17 @@ $id = $_POST['delButton'];
               </div>
               <div class="column">
                 <p>
-                    <label>Email:</label>
+                    <label>Adresse email:</label>
                     <input style="cursor: pointer;" name="email" value="Name@Email.com" type="text" style="width:20%"/>
                 </p>
             </div>
               <p>
                 <label>Message:</label><br> 
-                <textarea name="message" style="width:70%;border-radius: 10px;padding:30px;margin-top:15px;">Explain the resolution...</textarea>
+                <textarea name="message" style="width:70%;border-radius: 10px;padding:30px;margin-top:15px;">Expliquez la résolution...</textarea>
               </p>
 
               <form class="" action="deleteReportFr.php" method="post" style="margin: 2%">
-                <button type="submit" name="delete" id="delete" value=<?php echo "$id"; ?>>Notifier et effacer</button>
+                <button type="submit" name="delete" id="delete" value=<?php echo "$id"; ?>>Notifiez et effacez</button>
               </form>
             </form>
         </div>
