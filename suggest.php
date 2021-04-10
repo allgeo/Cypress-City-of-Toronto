@@ -43,8 +43,10 @@ if ($conn->connect_error) {
           <br> <br> <br>
 
            
-           <div class="" style="text-align: center; margin: auto">
-            <button onclick="document.location='chatbot.html'" style="margin-right: 5%; margin-top: 5px; border-radius: 55px;background-color: #155888;color:#FFFFFF; padding:22px;cursor:pointer">Send suggestions to the ChatBot</button>
+          <div class="" style="text-align: center; margin: auto">
+            <a href="chatbot.html">
+            <button onclick="document.location='chatbot.html'" style="margin-right: 1%; margin-top: 5px; border-radius: 55px;background-color: #155888;color:#FFFFFF; padding:22px;cursor:pointer">Send suggestions to the ChatBot</button>
+            </a>
           </div>
           
           <?php
