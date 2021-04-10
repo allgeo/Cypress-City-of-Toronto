@@ -19,7 +19,7 @@ if ($conn->connect_error) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
@@ -42,7 +42,11 @@ if ($conn->connect_error) {
           <a href="logout.php" style="float: right; margin: 4%">LOGOUT</a>
           <br> <br> <br>
 
-           <a href="chatbot.html" target="_blank"><button>Send suggestions to the ChatBot</button></a>  
+           
+           <div class="" style="text-align: center; margin: auto">
+            <button onclick="document.location='chatbot.html'" style="margin-right: 5%; margin-top: 5px; border-radius: 55px;background-color: #155888;color:#FFFFFF; padding:22px;cursor:pointer">Send suggestions to the ChatBot</button>
+          </div>
+          
           <?php
 
               $command = "SELECT * FROM `reports` ORDER BY `reports`.`date` DESC";
