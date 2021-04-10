@@ -1,34 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
-    <link rel="stylesheet" href="chatbot.css">
     <title>Customer Service</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+
+    <title>Customer Service</title>
+    <style>
+        .chat {
+            text-align: center;
+        }
+        #chatLog{
+            text-align: center;
+            padding-top: 50px;
+        }
+        #chatLog2{
+            text-align: center;
+
+        }
+        .chat {
+            text-align: center;
+        }
+        .background{
+            background-color:#e3e3e3;
+            width: 60%;
+            margin-left: 235px;
+            padding-top: 0px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-color: red;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+    <script>
+        var know = {
+            "Hello":"Hi, my name is Janet. How can I help you?",
+            "I would like to improve nothing.":"Thank you for the kind words. We appreciate your support!",
+        };
+        function talk() {
+             var input = document.getElementById("userBox") .value;
+             document.getElementById("chatLog").innerHTML += input+"<br>";
+            if(input in know){
+                document.getElementById("chatLog").innerHTML += know[input]+"<br>";
+            } else{
+                document.getElementById("chatLog").innerHTML+="I am not a genius , ask me something that I know!<br>";}}
+    </script>
 </head>
 <body>
+    <div class="inner-reg">
+        <nav class="nav">
+            <a href="/" class="cypress-logo">
+                <img src="./images/cypress-logo.png" alt="">
+            </a>
+            <a href="/" class="toronto-logo">
+                <img src="./images/toronto-logo.png" alt="">
+            </a>
+            <hr>
+        </nav>
 
-        <div class="chat-popup">
-            <div class="chat-area">
-             <div class="income-msg">
-                 <span class="msg"> Hi, How can I help you?</span>
-             </div>   
-            </div>
+        <div class="register-content">
+          <a href="reportsHome.html" style="float: left; margin: 4%">BACK</a>
+          <a href="logout.php" style="float: right; margin: 4%">LOGOUT</a>
+          <br> 
+          <h1 style="text-align: center; margin-top: 50px">Customer Service</h1>
+          <h3 style="text-align: center; margin-top: 5px; margin-bottom: 25px"> Interested to provide suggestions and recommendations to make our platform better?</h3>
+          <div style="text-align: center;">
+            <input id="userBox" type="text" view="text" onkeydown="if(event.keyCode == 13){talk()}">
+          </div>
+          <div class="background">
+            <h3 id="chatLog" style="padding-bottom: 50px"></h3>
+          </div>
+          <h3 style="text-align: center; margin-top: 5px; margin-bottom: 25px"> We thank you for the support.</h3>
 
-            <div class="input-area">
-                <input type="text" onkeydown="if(event.keyCode == 13){talk()}">
-                <button class="submit" > <i class="material-icons"> send</i></button>
-            </div>
-            <!-- <div style="text-align: center;" class="input-area">
-                <input id="userBox" type="text" onkeydown="if(event.keyCode == 13){talk()}">
-                <button class="submit"> send</i></button>
-            </div> -->
+          
+          
+          
         </div>
+    </body>
     
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
-    <script src="chatbot.js"></script>
-</body>
 </html>
